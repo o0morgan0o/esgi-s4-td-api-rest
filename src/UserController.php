@@ -20,8 +20,25 @@ class UserController
                 case 'GET':
                     echo json_encode($user);
                     break;
+                case 'DELETE':
+                    $rowCount = $this->userGateway->delete($id);
+                    if ($rowCount === 1) {
+                        echo json_encode(["message" => "User $id deleted"]);
+                        return;
+                    }
+                    $this->responseNotFound($id);
+                    break;
+                case 'PATCH':
+                    $data = json_decode(file_get_contents("php://input"), true);
+                    $rowCount = $this->userGateway->update($id, $data);
+                    if ($rowCount === 1) {
+                        echo json_encode(["message" => "User $id updated"]);
+                        return;
+                    }
+                    $this->responseNotFound($id);
+                    break;
                 default:
-                    $this->responseMethodNotAllowed("GET");
+                    $this->responseMethodNotAllowed("GET,DELETE,PATCH");
 
                 // A VOUS DE CRÉER LE CODE POUR LA MÉTHODE PATCH (UPDATE)
 

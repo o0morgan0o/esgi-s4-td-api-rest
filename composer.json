@@ -11,5 +11,7 @@
             "email": "morgan.thibert@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+      "ext-pdo": "*"
+    }
 }
