@@ -1,0 +1,15 @@
+{
+    "name": "morgan/td-api-rest-php-users",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "o0morgan0o",
+            "email": "morgan.thibert@gmail.com"
+        }
+    ],
+    "require": {}
+}
