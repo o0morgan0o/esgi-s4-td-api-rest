@@ -37,17 +37,3 @@ PATCH /api/users/{id} -> doit mettre à jour un utilisateur dans la base de donn
 4. Facultatif: Créer une page web minimaliste qui affiche les données utilisateurs, ainsi qu'une page pour ajouter un utilisateur.
 
 5. Créer un système d'authentification via une clé API obtenue au moment de la création d'un utilisateur. Cette clé API devra être envoyée dans le header de chaque requête pour pouvoir accéder aux ressources de l'API.
-
-<!-- 2. Créer le point d'entrée de l'API pour récupérer la liste des utilisateurs
-
-GET /api/users -> doit retourner un json contenant la liste des utilisateurs
-
-2. Créer le point d'entrée de l'API pour récupérer un utilisateur
-
-GET /api/users/{id} -> doit retourner un json contenant les informations de l'utilisateur
-
-3. Créer le point d'entrée de l'API pour ajouter un utilisateur
-
-POST /api/users -> doit ajouter un utilisateur dans la base de données et retourner un json contenant les informations de l'utilisateur ajouté
-
-4. Faire un sorte que le création de l'utilisateur génère un avatar aléatoire -->
