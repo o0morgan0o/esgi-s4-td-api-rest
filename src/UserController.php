@@ -22,11 +22,11 @@ class UserController
                     break;
                 default:
                     $this->responseMethodNotAllowed("GET");
+
+                // A VOUS DE CRÉER LE CODE POUR LA MÉTHODE PATCH (UPDATE)
+
+                // A VOUS DE CRÉER LE CODE POUR LA MÉTHODE DELETE 
             }
-
-            // A VOUS DE CRÉER LE CODE POUR LA MÉTHODE PATCH (UPDATE)
-
-            // A VOUS DE CRÉER LE CODE POUR LA MÉTHODE DELETE 
 
         } else {
 
