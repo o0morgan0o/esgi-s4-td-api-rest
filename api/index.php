@@ -8,6 +8,7 @@ require_once dirname(__DIR__) . "/vendor/autoload.php";
 set_exception_handler([ErrorHandler::class, "handleException"]);
 set_error_handler([ErrorHandler::class, "handleError"]);
 
+header("Content-Type: application/json");
 
 $path = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 
