@@ -34,6 +34,6 @@ PATCH /api/users/{id} -> doit mettre à jour un utilisateur dans la base de donn
 - Pour faire cela, demandez vous comment vous allez gérer les paramètres de la requête PATCH. Vous pouvez vous inspirer de la méthode POST déjà implémentée.
 - Également mettez en oeuvre un système de validation des données utilisateurs pour vérifier que les données envoyées sont correctes.
 
-4. Facultatif: Créer une page web minimaliste qui affiche les données utilisateurs, ainsi qu'une page pour ajouter un utilisateur.
+4. Créer une page web minimaliste qui affiche les données utilisateurs, ainsi qu'une page pour ajouter un utilisateur.
 
 5. Créer un système d'authentification via une clé API obtenue au moment de la création d'un utilisateur. Cette clé API devra être envoyée dans le header de chaque requête pour pouvoir accéder aux ressources de l'API.
